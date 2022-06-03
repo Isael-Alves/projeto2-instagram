@@ -1,0 +1,148 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Top {
+    position: fixed;
+    width: 100%;
+    height: 54px;
+    top: 0;
+    left: 0;
+
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    z-index: 1;
+}
+
+.elementTop {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.barrinha {
+    height: 22px;
+    width: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #DBDBDB;
+}
+
+.Icons-left,
+.Icons-right {
+    display: flex;
+}
+
+ion-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.Icons-left img {
+    width: 103px;
+    height: 29px;
+}
+
+.Icons-right {
+    width: 150px;
+    justify-content: space-between;
+}
+
+.elementTop .button {
+    width: 215px;
+    height: 28px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    color: #979797;
+    border-radius: 3px;
+}
+
+.CaixaStories {
+    margin-top: 90px;
+    width: 614px;
+    height: 118px;
+    padding-left: 18px;
+
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+
+.storie {
+    width: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storie img {
+    position: absolute;
+    width: 66px;
+    height: 66px;
+}
+
+.storie p {
+    width: 66px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.ImgStories img {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border: 5px solid rgba(0, 0, 0, 0);
+}
+
+.Part-Superior-Posts {
+    width: 614px;
+    padding: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    box-sizing: border-box;
+}
+
+.Part-Superior-Posts img{
+    width: 32px;
+    height: 32px;
+}
+
+.Part-Superior-Posts div{
+    display: flex;
+    align-items: center;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 15px;
+    
+    color: #262626;
+}
