@@ -1,13 +1,35 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+
 }
 
 main {
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 60px;
+    display: flex;
+    box-sizing: border-box;
 }
 
-.Top {
+h3 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 15px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+aside {
+    margin-left: 28px;
+}
+
+.Top,
+.TopMobile {
     position: fixed;
     width: 100%;
     height: 54px;
@@ -19,13 +41,19 @@ main {
     z-index: 1;
 }
 
+.TopMobile {
+    display: none;
+}
+
 .elementTop {
     margin: 0 auto;
+    width: 65%;
+    height: 100%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
-    height: 100%;
+
     background-color: #FFFFFF;
 }
 
@@ -75,8 +103,8 @@ ion-icon {
     border-radius: 3px;
 }
 
-.CaixaStories {
-    margin-top: 90px;
+.BoxStories {
+    position: relative;
     width: 614px;
     height: 118px;
     padding-left: 18px;
@@ -84,14 +112,23 @@ ion-icon {
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    overflow-x: hidden;
 
     background-color: #FFFFFF;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
 }
 
+.BoxStories ion-icon {
+    position: relative;
+    align-items: center;
+    right: 15px;
+    z-index: 1;
+}
+
 .storie {
     width: 66px;
+    margin-right: 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,32 +154,169 @@ ion-icon {
     border: 5px solid rgba(0, 0, 0, 0);
 }
 
+.Posts {
+    width: 614px;
+    height: 750px;
+    margin-top: 24px;
+
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+
 .Part-Superior-Posts {
     width: 614px;
+    height: 60px;
     padding: 18px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     box-sizing: border-box;
 }
 
-.Part-Superior-Posts img{
+.Part-Superior-Posts img {
     width: 32px;
     height: 32px;
 }
 
-.Part-Superior-Posts div{
+.Part-Superior-Posts div {
     display: flex;
     align-items: center;
 }
 
-h3{
-    font-weight: 500;
+.Img-Post img {
+    width: 614px;
+    height: 614px;
+}
+
+.Part-Inferior-Post {
+    width: 614px;
+    padding: 10px 18px;
+
+    box-sizing: border-box;
+}
+
+.Part-Inferior-Post section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textInferior {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.textInferior img {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+}
+
+.User {
+    width: 350px;
+    height: 56px;
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+}
+
+.User h4 {
+    margin-left: 17px;
+    font-weight: 300;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 14px;
+
+    color: #8E8E8E;
+}
+
+.Sugestions {
+    width: 350px;
+    margin-top: 24px;
+}
+
+.Sugestions li,
+.Sugestions span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Sugestions li {
+    margin-top: 17px;
+}
+
+.Sugestions li span {
+    display: flex;
+}
+
+.Sugestions h4,
+.Sugestions p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.Sugestions span h4 {
+    margin-left: 0px;
+    color: #8E8E8E;
+}
+
+.Sugestions li h4 {
     margin-left: 15px;
+}
+
+.Sugestions h5 {
+    color: #139EF2;
+}
+
+.Helps {
+    margin-top: 15px;
+}
+
+.Helps h6 {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    margin-top: 18px;
+
+    color: #C7C7C7;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 54px;
+    left: 0;
+    bottom: 0;
+    padding: 0 10px;
     
-    color: #262626;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #FFFFFF;
+}
+
+@media (max-width: 614px) {
+
+    .Top,
+    aside {
+        display: none;
+    }
+
+    .TopMobile {
+        display: block;
+    }
+
+    .elementTop {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    footer{
+        display: flex;
+    }
 }
